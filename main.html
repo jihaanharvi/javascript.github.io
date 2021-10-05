@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mt-5 text-center">
+        <button id="start" type="button" class="btn btn-primary btn-lg">Start</button>
+    </div>
+   
+    <script>  
+        
+    </script>
+    <script>
+         $(document).ready(function(){
+           $("#start").click(function(){
+
+            const problem1 = () => {
+            let num1 = parseInt(prompt("Input the 1st number: "));
+            let num2 = parseInt(prompt("Input the 2nd number: "));
+            let num3 = parseInt(prompt("Input the 3rd number: "));
+
+            let smallest;
+
+            if (num1 < num2) {
+                smallest = num1;
+            } else smallest = inputnum2;
+            if (num3 < smallest) {
+                smallest = num3;
+            }
+
+            let print1 = alert("The smallest: " + smallest);
+        }
+
+        problem1();
+
+        const problem2 = () => {
+            let i, n;
+            let f = 1;
+
+            n = parseInt(prompt("Input number of terms: "));
+
+            for (i = n; i > 0; i--) {
+                f *= i;
+            }
+
+            let print2 = alert("Factorial of " + n + " is: " + f);
+        }
+
+        problem2();
+
+        const problem3 = () => {
+            let max = parseInt(prompt("Enter number: "));
+
+            for (let i = 0; i < max; i++) {
+                for (let j = 0; j < max; j++) {
+                    let print3 = console.log("(" + i + "," + j + ")");
+                }
+                console.log();
+            }
+        }
+        problem3();
+           });
+       });
+    </script>
+
+</body>
+
+</html>
